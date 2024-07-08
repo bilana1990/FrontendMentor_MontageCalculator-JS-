@@ -1,0 +1,17 @@
+.punt_sterling,
+.year,
+.percent {
+  display: inline-block;
+  width: 50px;
+  text-align: right;
+}
+.main_section {
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.result {
+  margin-top: 20px;
+}

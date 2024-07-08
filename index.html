@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script> -->
+    <link rel="stylesheet" href="./style.css" />
+    <title>MONTAGE CALCULATOR</title>
+  </head>
+  <body>
+    <section class="main_section">
+      <h1>Mortgage Calculator</h1>
+      <a href="#" id="clearAll">Clear all</a>
+      <form class="first_form" action="javascript:void(0);">
+        <div>
+          <div class="punt_sterling">£</div>
+          <label for="amountInput">Mortgage Amount</label>
+          <input type="number" name="amount" id="amountInput" required />
+        </div>
+        <div>
+          <div class="year">Year</div>
+          <label for="termInput">Mortgage Term</label>
+          <input type="number" name="term" id="termInput" required />
+        </div>
+        <div>
+          <div class="percent">％</div>
+          <label for="RateInput">Interest Rate</label>
+          <input
+            type="number"
+            name="Rate"
+            id="RateInput"
+            step="0.01"
+            required
+          />
+        </div>
+        <div>
+          <label>Mortgage Type</label>
+          <div class="repayment">
+            <input
+              type="radio"
+              id="repayment"
+              name="mortgage_type"
+              value="repayment"
+              required
+            />
+            <label for="repayment">Repayment</label>
+          </div>
+          <div class="Interest">
+            <input
+              type="radio"
+              id="Interest"
+              name="mortgage_type"
+              value="interest_only"
+            />
+            <label for="Interest">Interest Only</label>
+          </div>
+        </div>
+        <button type="button" id="calculate">Calculate repayment</button>
+      </form>
+
+      <section class="result">
+        <h1>Your result</h1>
+        <h3>Your monthly repayment</h3>
+        <p id="result"></p>
+        <hr />
+        <h3>Total term</h3>
+        <p id="totalTerm"></p>
+      </section>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
